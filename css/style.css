@@ -6,6 +6,16 @@ body {
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #143a52;
 }
+header {
+  background-color: #ABC6C6
+  ;
+  padding: 10px;
+  margin: 10px;
+  border-bottom: 3px solid #4a4a4a;
+}
+selector {
+  margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
+}
 
 h1,
 h2,
@@ -54,18 +64,18 @@ img {
 }
 
 a {
-  color: #4631bb;
+  color: #000000;
   text-decoration: none; /* No underlining */
 }
 
 a:visited { /* Visited link */
-  color: #ABC6C6
+  color: #595963
   ;
 }
 
 a:hover,
 a:focus {
-  color: #ABC6C6
+  color: #595963
   ;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
@@ -96,7 +106,7 @@ a:active { /* Selected link */
 }
 
 .button:active { /* Selected link */
-  color: #ABC6C6;
+  color: #595963;
 }
 
 .button.contact,
@@ -117,7 +127,7 @@ a:active { /* Selected link */
 .button.contact:focus,
 .button.resume:hover,
 .button.resume:focus {
-  background-color: #ABC6C6;
+  background-color: #595963;
   font-weight: 600;
 }
 
