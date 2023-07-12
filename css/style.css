@@ -135,3 +135,6 @@ a:active { /* Selected link */
 .button.resume:active { /* Selected link */
   color: #fdf7ed;
 }
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
