@@ -1,26 +1,51 @@
 * {
   box-sizing: border-box;
 }
-
 body {
-  background-color: #fbfbfb;
+  background-color: #FBFBFB;
   font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.6;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 400; /* Sets the font weight to 400 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #143a52;
+  margin-left: 20px;
+  margin-right: 20px;
 }
-
 header {
-  background-color: #abc6c6;
+  background-color: #ABC6C6;
   text-align: center;
-  padding: 10px;
-  margin: 10px;
+  padding: 0;
+  margin: 0 -20px; /* Removes the margin applied to the header section */
   border-bottom: 3px solid #4a4a4a;
+  width: 100vw; /* Sets the width to 100% of the viewport width */
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
+  color: #ECB759;
+  text-decoration: underline;
 }
 
-.selector {
-  margin: 0 auto;
+nav > ul > li > a:visited {
+  color: #595963;
+}
+selector {
+  margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
+}
+.logo {
+  max-width: 250px;
 }
 
 h1,
@@ -34,6 +59,7 @@ h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 2.75em;
   font-weight: 800;
+  margin-left: 24px;
 }
 
 h2 {
@@ -50,7 +76,10 @@ h4 {
   font-size: 1.35em;
   font-weight: 500;
 }
-
+p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 img {
   width: 100%;
 }
@@ -71,60 +100,64 @@ img {
 
 a {
   color: #000000;
-  text-decoration: none;
+  text-decoration: none; /* No underlining */
 }
 
-a:visited {
-  color: #595963;
+a:visited { /* Visited link */
+  color: #595963
+  ;
 }
 
 a:hover,
 a:focus {
-  color: #595963;
-  text-decoration: underline;
+  color: #595963
+  ;
+  text-decoration: underline; /* Underlining when hovering over a link */
 }
 
-a:active {
-  color: #ecb759;
+a:active { /* Selected link */
+  color: #ECB759;
 }
 
 .button {
-  display: inline-block;
-  background-color: #ecb759;
-  color: #000000;
+  display: block;
+  margin: 0 auto;
+  background-color: #ECB759;
+  color: #ffffff;
   font-weight: 500;
-  padding: 10px;
+  padding: 10px 60px; /* Increase the padding to make the button longer */
+  border: none;
   border-radius: 3px;
-  border-bottom: 2px solid #f2a829;
-  transition: 0.2s opacity;
-}
-
-.button:visited {
-  color: #fdf7ed;
+  transition: 0.2s all;
+  box-shadow: none; /* Add this line to reset the initial box shadow */
 }
 
 .button:hover,
 .button:focus {
   opacity: 0.8;
   text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add this line for the shadow effect */
 }
 
-.button:active {
+
+.button:active { /* Selected link */
   color: #595963;
 }
 
 .button.contact,
 .button.resume {
   background-color: transparent;
-  color: #ecb759;
+  color: #ECB759;
   text-transform: uppercase;
-  border: 2px solid #ecb759;
-  transition: 0.2s background-color, font-weight;
+  border: 2px solid #ECB759;
+  transition: .2s background-color, font-weight;
+  padding: 10px 20px; /* Add padding of 10 pixels top/bottom and 20 pixels left/right */
+  text-align: center;
 }
 
 .button.contact:visited,
-.button.resume:visited {
-  color: #ecb759;
+.button.resume:visited { /* Visited link */
+  color: #ECB759;
 }
 
 .button.contact:hover,
@@ -136,18 +169,21 @@ a:active {
 }
 
 .button.contact:active,
-.button.resume:active {
+.button.resume:active { /* Selected link */
   color: #fdf7ed;
 }
 
 .row {
-  margin: 25px 0;
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
-
+/* Layout styling */
 .container {
   padding: 0 15px;
 }
-
 #hero h1 {
-  text-align: center;
+  text-align: center; /* Centers text */
+}
+p {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
