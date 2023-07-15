@@ -63,7 +63,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.25em;
+  font-size: 2.00em;
   font-weight: 700;
 }
 
@@ -112,10 +112,10 @@ a:hover,
 a:focus {
   color: #595963
   ;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: underline; 
 }
 
-a:active { /* Selected link */
+a:active { 
   color: #ECB759;
 }
 
@@ -125,11 +125,11 @@ a:active { /* Selected link */
   background-color: #ECB759;
   color: #ffffff;
   font-weight: 500;
-  padding: 10px 60px; /* Increase the padding to make the button longer */
+  padding: 10px 60px; 
   border: none;
   border-radius: 3px;
   transition: 0.2s all;
-  box-shadow: none; /* Add this line to reset the initial box shadow */
+  box-shadow: none; 
 }
 
 .button:hover,
