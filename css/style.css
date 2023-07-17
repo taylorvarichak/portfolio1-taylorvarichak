@@ -251,6 +251,11 @@ a:active {
 
   .navigation {
     justify-content: flex-end;
+    margin-top: 10px; 
+  }
+
+  .navigation li {
+    margin: 0 10px; 
   }
 
   .button {
@@ -259,8 +264,17 @@ a:active {
 
   .work-section {
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 40% 60%; 
     gap: 20px;
+  }
+
+  .work-section img {
+    width: 100%; 
+  }
+
+  .work-section .project {
+    display: inline; 
+    align-items: center; /* Add this to vertically center image and text */
   }
 
   .about-section .skills {
@@ -269,4 +283,3 @@ a:active {
     gap: 20px;
   }
 }
-
