@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +12,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
   <style>
+    #hello {
+      animation: wipeInLeftToRight 3s;
+    }
+  
+    @keyframes wipeInLeftToRight {
+      0% {
+        opacity: 1;
+        transform: translateX(-100%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
   </style>
+  
 </head>
 <body>
   <header>
@@ -25,9 +41,29 @@
       </ul>
     </nav>
   </header>
+  <svg xmlns="http://www.w3.org/2000/svg" width="306" height="104" viewBox="0 0 306 104" fill="none">
+    <g id="hello">
+    <rect width="306" height="104" fill="#FBFBFB"/>
+    <g id="h">
+    <text id="h_2" fill="black" xml:space="preserve" style="white-space: pre" font-family="Ink Free" font-size="32" letter-spacing="0em"><tspan x="37" y="59.456">h</tspan></text>
+    </g>
+    <g id="e">
+    <text id="e_2" fill="black" xml:space="preserve" style="white-space: pre" font-family="Ink Free" font-size="32" letter-spacing="0em"><tspan x="90" y="59.456">e</tspan></text>
+    </g>
+    <g id="l">
+    <text id="l_2" fill="black" xml:space="preserve" style="white-space: pre" font-family="Ink Free" font-size="32" letter-spacing="0em"><tspan x="140" y="59.456">l</tspan></text>
+    </g>
+    <g id="ll">
+    <text id="o" fill="black" xml:space="preserve" style="white-space: pre" font-family="Ink Free" font-size="32" letter-spacing="0em"><tspan x="224" y="59.456">o</tspan></text>
+    </g>
+    <g id="o_2">
+    <text id="l_3" fill="black" xml:space="preserve" style="white-space: pre" font-family="Ink Free" font-size="32" letter-spacing="0em"><tspan x="182" y="59.456">l</tspan></text>
+    </g>
+    </g>
+    </svg>
   <div id="hero" style="margin-bottom: 24px;">
     <div class="hero-section">
-      <h1>Hi! <br> I'm Taylor.</h1>
+      <h1>I'm Taylor.</h1>
       <p id="into-paragraph">I am a UI designer with a background in education. I love finding the connection between creating something beautiful and delightful to use.</p>
     </div>
     <button class="button" style="margin-top: 24px;">View my CV</button>
