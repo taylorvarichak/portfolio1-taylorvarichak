@@ -396,3 +396,22 @@ footer {
     width: max-content;
   }
 }
+
+/* Initially hide the SVG icon */
+.hamburger {
+  display: none;
+}
+
+/* Show the SVG icon on mobile screens */
+@media only screen and (max-width: 640px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 24px;
+    /* Adjust width as needed */
+    height: 24px;
+    /* Adjust height as needed */
+  }
+}
